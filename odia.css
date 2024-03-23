@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('food.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your actual image */
+    background-size: cover; /* Cover the entire header with the background image */
+    background-position: center; /* Center the background image */
+    color: #170303;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Styling for Vegetarian and Non-Vegetarian Dishes */
+#vegetarian-dishes, #non-vegetarian-dishes {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#vegetarian-dishes h2, #non-vegetarian-dishes h2 {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#vegetarian-dishes ul, #non-vegetarian-dishes ul {
+    margin-top: 10px;
+}
+
+#vegetarian-dishes li, #non-vegetarian-dishes li {
+    color: #008000; /* Green color for vegetarian dishes */
+}
+
+#non-vegetarian-dishes li {
+    color: #ff0000; /* Red color for non-vegetarian dishes */
+}
+
+/* Your existing CSS styles */
+/* Your existing CSS styles */
+
+.food-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center align items */
+}
+
+.food-item {
+    flex: 0 0 calc(33.33% - 40px);
+    max-width: calc(33.33% - 40px);
+    background-color: #f1f6fc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.food-item:hover {
+    transform: translateY(-5px); /* Add a slight lift on hover */
+}
+
+.food-item h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.food-item p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .food-item {
+        flex: 0 0 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+}
+
+/* Responsive layout for even smaller screens */
+@media screen and (max-width: 480px) {
+    .food-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

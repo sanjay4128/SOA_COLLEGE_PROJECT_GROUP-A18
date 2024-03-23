@@ -1,0 +1,164 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e3ecf5;
+    color: #050303;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.category-card img {
+    width: 100%;
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+    border-radius: 15px 15px 0 0;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #5ecdec;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    font-family: 'Shadows Into Light', Whisper;
+    background-color: #0d0101;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #f5e7e7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Hero section styles */
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('hero-bg.jpg') center/cover no-repeat;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Featured recipes section styles */
+.featured-recipes {
+    padding: 100px 0;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+    position: relative;
+    margin-top: 20px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.logo {
+    background-image: linear-gradient(to right, #ff7e5f, #450c48, #90fff6, #ef90cc, #f5e3b3); /* Adjust colors as needed */
+    -webkit-background-clip: text; /* Clip the text to the background shape */
+    background-clip: text;
+    color: transparent; /* Hide the text */
+    font-size: 32px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    text-transform: uppercase; /* Adjust text transform as needed */
+}
+
+.logo-img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: -1150px; /* Adjust the spacing between the logo text and the image */
+    
+    
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+img {
+    border-radius: 15px; /* Adjust the value as needed to increase or decrease the curvature */
+}
+
+
+
+
+
